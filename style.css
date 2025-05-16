@@ -1,0 +1,32 @@
+body {
+  padding-top: 75px;
+}
+
+.icon-size {
+  height: 100px;
+}
+
+#home-quote {
+  background: url('./img/bg-quote.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  #home-quote .display-4{
+    font-size: 2.5rem;
+  }
+  body {
+    padding-top: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
+
+.list-plan li + li {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.list-plan li {
+  padding: 0.75rem;
+}

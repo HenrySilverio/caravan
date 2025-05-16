@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Caravan - Plans</title>
+</head>
+
+<body>
+
+  <!--  Modal   -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login to Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Fecha Modal  -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/caravan.svg" alt="Caravan" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="./locations.html">California</a></li>
+              <li><a class="dropdown-item" href="#">Paris</a></li>
+              <li><a class="dropdown-item" href="#">Dublin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="plans.html">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ms-2" href="sign-up.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Close navigation -->
+
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h6 d-block">YOUR PLANS, YOUR TRAVEL</span>
+      <h1 class="display-4 text-primary">Choose your Plan</h1>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 shadow p-3 mb-5">
+          <h2>Gold <span class="badge bg-success">Common</h2>
+          <ul class="list-unstyled list-plan">
+            <li>→ 30 days of travel</li>
+            <li>→ 3 different destinations</li>
+            <li>→ All expenses paid by the company</li>
+            <li>→ Party tickets</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-select" id="input-cities">
+                <option selected>Select the city</option>
+                <option value="1">California</option>
+                <option value="2">Paris</option>
+                <option value="3">Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="./inscricao.html" class="btn btn-primary btn-lg">Buy Plan</a>
+            </div>
+            <div class="col">
+              <span class="h4">$5.000</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="bg-light rounded p-4 shadow p-3 mb-5">
+          <h2>Platinum <span class="badge bg-success">New</span></h2>
+          <ul class="list-unstyled list-plan">
+            <li>→ 60 days of travel</li>
+            <li>→ 6 different destinations</li>
+            <li>→ All expenses paid by the company</li>
+            <li>→ Party tickets</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-select" id="input-cities">
+                <option selected>Select the city</option>
+                <option value="1">California</option>
+                <option value="2">Paris</option>
+                <option value="3">Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <button href="./inscricao.html" class="btn btn-primary btn-lg">Buy Plan</button>
+            </div>
+            <div class="col">
+              <span class="h4">$7.500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Pages</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Plans</a></li>
+            <li><a href="contato.html">Contacts</a></li>
+            <li><a href="inscricao.html">Sign up</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Locations</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">California</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">Contacts</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@email.com</li>
+            <li>+55 34 98888-8888</li>
+            <li>Monday to Friday from 8am to 6pm</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">Social media</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="btn btn-outline-secondary btn-sm btn-block mb-2" style="max-width: 140px" href="https://www.linkedin.com/in/henrique-b-silverio/" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a class="btn btn-outline-secondary btn-sm btn-block mb-2" style="max-width: 140px" href="https://github.com/HenrySilverio/caravan" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a class="btn btn-outline-secondary btn-sm btn-block mb-2" style="max-width: 140px" href="https://www.instagram.com/henriquesilveriobx/" target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan © 2025. Some rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
