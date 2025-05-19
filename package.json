@@ -1,0 +1,11 @@
+{
+  "name": "caravan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:HenrySilverio/caravan.git",
+  "author": "HenrySilverio <silveriohenriqueb@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^14.4.0"
+  }
+}
